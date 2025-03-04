@@ -1,14 +1,17 @@
 # ell-iot
 
-A Clojure library designed to ... well, that part is up to you.
+![Diagram](doc/diagram.png)
+
+Microservice designed to enable Arduino-like devices to generate and expose metrics via Prometheus and Grafana,
+facilitating real-time monitoring and analysis.
 
 ## Usage
 
-FIXME
+TDB
 
 ## License
 
-Copyright © 2025 FIXME
+Copyright © 2025 Bruno do Nascimento Maciel
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

@@ -1,6 +1,6 @@
 (defproject ell-iot "0.1.0-SNAPSHOT"
 
-  :description "Microservice aimed to provide a way to enable Arduino like devices to produce metrics to Prometheus and Grafana."
+  :description "Microservice designed to enable Arduino-like devices to generate and expose metrics via Prometheus and Grafana, facilitating real-time monitoring and analysis."
 
   :url "https://github.com/macielti/ell-iot"
 
