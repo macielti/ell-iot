@@ -56,4 +56,5 @@
                                                     "-jar" "./target/${:uberjar-name:-${:name}-${:version}-standalone.jar}"
                                                     "-H:+UnlockExperimentalVMOptions"
                                                     "-H:+StaticExecutableWithDynamicLibC"
-                                                    "-H:Name=./target/${:name}"]}}})
+                                                    "-H:Name=./target/${:name}"]}}}
+  :main ell-iot.components)

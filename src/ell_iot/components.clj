@@ -1,11 +1,12 @@
 (ns ell-iot.components
-  (:require [integrant.core :as ig]
-            [taoensso.timbre :as timbre]
-            [taoensso.timbre.tools.logging]
-            [common-clj.integrant-components.config :as component.config]
+  (:require [common-clj.integrant-components.config :as component.config]
             [common-clj.integrant-components.routes :as component.routes]
             [ell-iot.diplomat.http-server :as diplomat.http-server]
-            [prometheus-component.core :as component.prometheus])
+            [integrant.core :as ig]
+            [prometheus-component.core :as component.prometheus]
+            [service-component.core :as component.service]
+            [taoensso.timbre :as timbre]
+            [taoensso.timbre.tools.logging])
   (:gen-class))
 
 (taoensso.timbre.tools.logging/use-timbre)

@@ -13,3 +13,7 @@ pom.xml.asc
 .hg/
 /.idea/
 /ell-iot.iml
+/resources/config.edn
+/.clj-kondo/.cache/
+/.clj-kondo/imports/
+/.lsp/.cache/
