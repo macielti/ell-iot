@@ -20,3 +20,17 @@
    _config]
   (cond (:labels metric) (prometheus/inc (:registry prometheus) (:name metric) (:labels metric))
         :else (prometheus/inc (:registry prometheus) (:name metric))))
+
+(s/defmethod registry-metric! :gauge
+  [metric :- models.metric/RegistryMetric
+   prometheus
+   _config]
+  (cond (:labels metric) (prometheus/set (:registry prometheus) (:name metric) (:labels metric) (:value metric))
+        :else (prometheus/set (:registry prometheus) (:name metric) (:value metric))))
+
+(s/defmethod registry-metric! :summary
+  [metric :- models.metric/RegistryMetric
+   prometheus
+   _config]
+  (cond (:labels metric) (prometheus/observe (:registry prometheus) (:name metric) (:labels metric) (:value metric))
+        :else (prometheus/observe (:registry prometheus) (:name metric) (:value metric))))
