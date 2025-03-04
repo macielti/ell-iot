@@ -18,7 +18,8 @@
 (def components
   {::component.config/config         {:path "resources/config.edn"
                                       :env  :prod}
-   ::component.prometheus/prometheus {:metrics []}
+   ::component.prometheus/prometheus {:components {:config (ig/ref ::component.config/config)}
+                                      :metrics    []}
    ::component.routes/routes         {:routes diplomat.http-server/routes}
    ::component.service/service       {:components (merge dependencies
                                                          {:routes (ig/ref ::component.routes/routes)})}})
