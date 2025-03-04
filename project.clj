@@ -1,6 +1,6 @@
 (defproject ell-iot "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
+  :description "Microservice aimed to provide a way to enable Arduino like devices to produce metrics to Prometheus and Grafana."
 
   :url "https://github.com/macielti/ell-iot"
 
