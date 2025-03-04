@@ -1,9 +1,9 @@
 (ns ell-iot.adapters.metric
-  (:require [medley.core :as medley]
-            [schema.core :as s]
+  (:require [camel-snake-kebab.core :as csk]
             [ell-iot.models.metric :as models.metric]
             [ell-iot.wire.in.metric :as wire.in.metric]
-            [camel-snake-kebab.core :as csk]))
+            [medley.core :as medley]
+            [schema.core :as s]))
 
 (s/defn wire-labels->internal :- models.metric/Labels
   [labels :- wire.in.metric/Labels]
